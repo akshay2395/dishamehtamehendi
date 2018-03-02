@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 50;
+ }
+
+/*            NAVIGATION BAR CSS                    */
+
+#navigationBar{
+  background-color: none;
+  color:white;
+  margin: 3% 7% ;
+  transition: 0.3s ease-out;
+}
+
+#brand{
+  color: white!important;
+  font-size: 1.5em;
+}
+
+#brand:hover{
+  box-shadow: 2px 2px 2px white;
+  transition: box-shadow 0.3s ease-in;
+}
+
+#myNavbar a{
+  color:white!important;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+#myNavbar a:hover{
+  background-color: transparent;
+  box-shadow: 0px 2.5px 0px white;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.scrolledNav{
+  border: solid 0.7px white!important;
+  background-color: rgba(0, 0, 0,0.95)!important;
+  margin: 0!important;
+  transition: 0.3s ease-in-out;
+}
+
+/*            COVER CSS                    */
+
+ #firstPage{
+   background-image: url("https://previews.123rf.com/images/chupacabra/chupacabra1503/chupacabra150300109/37748918-mehendi-art-or-heena-tattoo-on-the-hand-of-beautiful-girl-india.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   width: auto;
+   height: 676px;
+   margin: 0;
+}
+
+#introText{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 3.5em;
+  line-height: 0.5em;
+  text-align: center;
+  color:white;
+}
+
+.fa{
+  color: white;
+}
+
+.fa:hover{
+  color: inherit;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/*            ABOUT SECTION CSS                    */
+
+#about{
+  background-color: #5B2E24;
+  position: relative;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#aboutText{
+  position: absolute;
+  width: 80%;
+  top:50%;
+  left: 50%;
+  padding: 25px 0px 25px 0px;
+  transform: translate(-50%,-50%);
+  font-size: 1em;
+  color:white;
+}
+
+/*            POSTS CSS                    */
+
+#recentPosts{
+  margin: 0px auto;
+  <!-padding 50px-->
+}
+
+#recentPosts h1{
+  margin: 50px auto;
+}
+
+.parent {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+  	cursor: pointer;
+    margin: 20px auto;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+
+/*            IMAGES TO DISPLAY CSS                    */
+.bgOne {background-image: url(http://stylesatlife.com/wp-content/uploads/2016/03/Reena-Mehndi-Art.jpg);}
+.bgTwo {background-image: url(https://www.zoviti.com/blog/wp-content/uploads/2015/09/IMG_3918.jpg);}
+.bgThree {background-image: url(http://shalinimehendiartist.com/wp-content/uploads/2013/04/IMG_20161231_141151.jpg);}
+
+
+.parent a {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+    color:white;
+    text-decoration: none;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*            SUBSCRIBE FORM CSS                    */
+
+#subscribe{
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+}
+
+#subscribe input{
+  margin-top: 15px;
+  height: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 1.6em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px inherit;
+}
+
+#subscribe input:focus{
+  outline: none;
+}
+
+#subscribe input:hover{
+  animation: borderTransition 1s forwards;
+}
+
+#subscribe button{
+  background-color: transparent;
+  font-size: 1.2em;
+  margin: 25px 10px;
+  padding: 5px 25px;
+  border: solid 1px black;
+}
+
+#subscribe button:hover{
+  animation: bgChange 0.8s forwards;
+  z-index: 0;
+}
+
+@keyframes bgChange{
+  100%{
+        background-color: black;
+        color:white;
+     }
+}
+
+@keyframes borderTransition {
+   100%{
+     border-bottom: solid 1px black;
+   }
+}
+
+/*            CONTACT CSS                    */
+
+#ContactForm {
+  background-color: #5B2E24;
+  justify-content: center;
+  float: none;
+  color: white;
+  width:auto;
+  height: auto;
+  margin: 0px;
+  padding: 30px;
+}
+
+#ContactForm input,#ContactForm textarea,#ContactForm button{
+  margin:5px 0px 5px 0px;
+}
+
+#ContactForm input:hover, textarea:hover{
+  background-color: #FFF5F5;
+  transition:background-color  0.3s ease-in;
+}
+
+#ContactForm button:hover{
+  color:white;
+  background-color: #5B2E24;
+  transition: background-color 0.3s ease-in-out;
+}
+/*            FOOTER CSS                    */
+
+footer{
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #brand{
+      font-size: 1.8em;
+  }
+  #aboutText{
+      font-size: 0.8em;
+  }
+  #aboutText h1{
+    line-height: 2em;
+  }
+  .icon-bar{
+    border: solid 1px white;
+  }
+  footer{
+    font-size: 0.9em;
+  }
+}
