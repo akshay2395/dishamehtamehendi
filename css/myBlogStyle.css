@@ -62,20 +62,32 @@
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  font-size: 3.5em;
+  font-size: 3.7em;
   line-height: 0.5em;
   text-align: center;
-  color:white;
+  color: white;  /*:#1e1d1d*/
+  opacity: 0;
 }
 
 .fa{
-  color: white;
+  color: #fff;  /*:#1e1d1d*/
 }
 
 .fa:hover{
   color: inherit;
-  opacity: 0.7;
+  opacity: 0.3;
   text-decoration: none;
+}
+
+#Twitter {
+    opacity:0;
+}
+
+#facebook{
+    opacity:0;
+}
+#instagram{
+   opacity:0;
 }
 
 /*            ABOUT SECTION CSS                    */
@@ -131,9 +143,15 @@
 
 
 /*            IMAGES TO DISPLAY CSS                    */
-.bgOne {background-image: url(http://stylesatlife.com/wp-content/uploads/2016/03/Reena-Mehndi-Art.jpg);}
-.bgTwo {background-image: url(https://www.zoviti.com/blog/wp-content/uploads/2015/09/IMG_3918.jpg);}
-.bgThree {background-image: url(http://shalinimehendiartist.com/wp-content/uploads/2013/04/IMG_20161231_141151.jpg);}
+.bgOne {background-image: url(http://stylesatlife.com/wp-content/uploads/2016/03/Reena-Mehndi-Art.jpg);
+        opacity: 0;
+       }
+.bgTwo {background-image: url(https://www.zoviti.com/blog/wp-content/uploads/2015/09/IMG_3918.jpg);
+        opacity: 0;
+       }
+.bgThree {background-image: url(http://shalinimehendiartist.com/wp-content/uploads/2013/04/IMG_20161231_141151.jpg);
+        opacity: 0;
+       }
 
 
 .parent a {
